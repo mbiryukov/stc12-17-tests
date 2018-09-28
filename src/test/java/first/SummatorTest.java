@@ -4,9 +4,6 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.io.IOException;
-
-import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -34,10 +31,5 @@ public class SummatorTest {
     @Test
     void doSomeTest(){
         assertThrows(RuntimeException.class,()->this.summator.doSome(5));
-    }
-
-    @Test
-    void doSomeTestNoException(){
-        assertDoesNotThrow(()->this.summator.doSome(4));
     }
 }
